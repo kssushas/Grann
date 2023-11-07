@@ -1,0 +1,42 @@
+.bestsellers-section{
+    padding-top: 133px;
+}
+
+.best-title{
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: 'Moniqa';
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 83px;
+}
+
+.bestlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.best-list-title{
+    max-width: 230px;
+margin: 16px 0 10px;
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+}
+
+.best-list-p{
+font-size: 16px;
+font-weight: 300;
+line-height: 20px;
+}
+
+.best-wrap{
+    position: relative;
+}
+.best-shop-card{
+    position: absolute;
+    top: 0;
+    right: 2px;
+}

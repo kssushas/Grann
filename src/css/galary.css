@@ -1,0 +1,53 @@
+.galary{
+    padding-top: 105px;
+}
+
+.galary-list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 65px;
+}
+
+.galarry-item{
+    position: relative;
+}
+
+.galarry-btn{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+   width: 276px;
+   height: 67px;
+   padding: 0;
+   border-radius: 10px;
+   font-family: Montserrat;
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--foter-color);
+background-color: var(--bg-color);
+}
+
+    .galarry-btn::after{
+        content: '';
+        position: absolute;
+        width: 67px;
+        height: 67px;
+        top: 0;
+        left: 233px;
+        background-image: url(../img/Arrow.svg);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: var(--foter-color);
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .galarry-btn:hover::after, .galarry-btn:focus::after{
+        opacity: 1;
+    }
+   

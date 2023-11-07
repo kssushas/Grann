@@ -1,21 +1,76 @@
 .header {
-  padding: 20px 0;
+    padding: 41px 10px;
+    border-bottom: 1px solid #fff;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.logoGrann{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 91px;
+   height: 79px;
+
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-icon-menu{
+    margin-right: 30px;
+}
+
+.header-icon-menu:hover, .header-icon-menu:focus{
+   transform: scale(1.1);
+}
+
+.header-shopping-card:hover, .header-shopping-card:focus{
+    transform: scale(1.1);
+ }
+
+.header-navigation{
+    display: none;
+}
+@media screen and (min-width: 1000px)
+{
+    .header{
+        background-color: var(--bg-color);
+        padding: 30px 100px;
+    }
+
+    .header-icon-menu{
+        display: none;
+    }
+
+    .nav{
+        margin-right: auto;
+    }
+    .header-navigation{
+       display: flex;
+       gap: 118px;
+       font-size: 16px;
+       font-weight: 300;
+       line-height: 20px;
+    }
+
+    .header-item-nav{
+        padding: 20px 0;
+        transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header-item-nav:hover, .header-item-nav:focus{
+        font-size: 17px;
+        text-shadow: 1px 1px 1px var(--foter-color);
+    }
+
+    .header-shopping-card{
+        margin-left: 76px;
+    }
+
+    .logoGrann{
+        width: 114px;
+        height: 91px;
+    }
 }

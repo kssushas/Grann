@@ -1,0 +1,116 @@
+
+main{
+    padding: 72px 10px 0 0;
+}
+
+.main-pic{
+    display: none;
+}
+.main-decor-text{
+    display: none;
+}
+
+.main-grann{
+    font-family: 'Moniqa';
+font-size: 120px;
+font-weight: 900;
+line-height: 125px;
+text-align: center;
+}
+
+.main-p-undergrann{
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+    .main-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-list-soc li{
+        margin-bottom: 20px;
+    }
+
+ .main-list-soc li:last-child{
+     margin-bottom: 0;
+    }
+
+.main-btn-catalog{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 67px;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    font-family: 'Montserrat';
+    color: var(--foter-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .main-grann{
+        display: none;
+    }
+
+    .main-img-desert{
+        display: none;
+    }
+
+    .main-btn-catalog{
+        display: none;
+    }
+
+    main{ 
+       position: relative;
+       padding: 35px 0 152px 0;
+        background-image: url(../img/Vector-fon-min.png);
+        background-size: cover;  
+        
+    }
+
+    .main-p-undergrann{
+        font-family: 'Moniqa';
+font-size: 100px;
+font-weight: 900;
+line-height: 104px;
+margin-bottom: 43px;
+    }
+
+    .main-pic{
+       display: block;
+       margin: 0 auto;
+    }
+
+    .main-decor-text{
+        position: absolute;
+        display: block;
+        top: 570px;
+        left: 66%;
+        max-width: 250px; 
+     font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    }
+
+    .main-list-soc{
+       position: absolute;
+       top: 590px;
+       left: 95%;
+    }
+}
+  
+ 
