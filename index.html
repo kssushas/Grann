@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-b8239a9a.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-791c68a0.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-7fb53564.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-19e0b8fe.css">
   </head>
   <body>
     
@@ -190,64 +190,33 @@
     <div class="container">
 <h1 class="best-title">BESTSELLERS</h1>
 <ul class="bestlist">
-    <li class="best-item">
-        <picture>
-            <source
-              srcset="
-              ../img/Rectangle4-1x-min.png 1x,
-              ../img/Rectangle4-2x-min.png  2x
-              "
-              media="(min-width: 1100px)"
-            />
-            <source
-              srcset="
-               ../img/best-1-mob-1x-min.jpg 1x,
-               ../img/best-1-mob-2x-min.jpg 2x
-              "
-              media="(max-width: 1999px)"
-            />
-            <img
-              src="../img/best-1-mob-1x-min.jpg"
-              alt="cakes"   
-            />
-          </picture>
-          <div class="best-wrap">
-    <h4 class="best-list-title">Mango-Passionfruit mousse cake</h4>
-    <p class="best-list-p">1200UAH/3kg</p>
-    <svg class="best-shop-card" width="30" height="30">
-        <use href="../img/svg.svg#icon-shoping-cart"></use>
-    </svg></div>
-    </li>
-    <li class="best-item">
-        <picture>
-            <source
-              srcset="
-              ../img/Rectangle4-1x-min.png 1x,
-              ../img/Rectangle4-2x-min.png  2x
-              "
-              media="(min-width: 1100px)"
-            />
-            <source
-              srcset="
-               ../img/best-2-mob-1x-min.jpg 1x,
-               ../img/best-2-mob-2x-min.jpg 2x
-              "
-              media="(max-width: 1999px)"
-            />
-            <img
-              src="../img/best-2-mob-1x-min.jpg"
-              alt="cakes"   
-            />
-          </picture>
-          <div class="best-wrap">
-    <h4 class="best-list-title">Chocolate brownie</h4>
-    <p class="best-list-p">300UAH/3pcs</p>
-    <svg class="best-shop-card" width="30" height="30">
-        <use href="../img/svg.svg#icon-shoping-cart"></use>
-    </svg>
-</div>
-    </li>
 </ul>
+
+<div class="best-mob-btn">
+  <button class="prevEl best-btn"><svg width="41" height="9">
+    <use href="../img/svg.svg#icon-ArrowPrev"></use>
+  </svg></button>
+  <ul class="best-elipse">
+    <li>
+      <svg width="11" height="11" class="el-1">
+        <use href="../img/svg.svg#icon-Ellipse"></use>
+      </svg>
+    </li>
+    <li>
+      <svg width="11" height="11" class="el-2">
+        <use href="../img/svg.svg#icon-Ellipse"></use>
+      </svg>
+    </li>
+    <li>
+      <svg width="11" height="11" class="el-3">
+        <use href="../img/svg.svg#icon-Ellipse"></use>
+      </svg>
+    </li>
+  </ul>
+  <button class="nextEl best-btn"><svg class="best-next-arrow" width="41" height="9">
+    <use href="../img/svg.svg#icon-ArrowPrev"></use>
+  </svg></button>
+</div>
 </div>
 </section>
     
