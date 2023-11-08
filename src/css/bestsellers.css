@@ -40,3 +40,45 @@ line-height: 20px;
     top: 0;
     right: 2px;
 }
+
+.best-mob-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 355px;
+    margin: 40px auto 0;
+}
+.best-btn{
+    width: 76px;
+    height: 27px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: 1px solid var(--foter-color);
+}
+.best-next-arrow{
+   transform: rotate(-180deg);
+}
+
+.best-elipse{
+    display: flex;
+    gap: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .best-img{
+        max-width: 350px;
+    }
+}
