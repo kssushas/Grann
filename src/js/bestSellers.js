@@ -20,6 +20,7 @@ refs.prevEl.style.backgroundColor = 'transparent';
 renderBestProd(counter);
 
 function renderBestProd(counter) {
+  console.log(markupBest(counter) + markupBest(counter+1))
   refs.bestlist.innerHTML = markupBest(counter) + markupBest(counter + 1);;
   switch (counter) {
     case 0:
