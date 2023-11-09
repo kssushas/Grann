@@ -12,14 +12,14 @@ const responseBestSellers = [
         price : "300UAH/3pcs",
     },
     {
-        src : "../img/best-3-1x-min.jpg",
-        srcset : "../img/best-3-2x-min.jpg 2x",
+        src : "./img/best-3-1x-min.jpg",
+        srcset : "./img/best-3-2x-min.jpg 2x",
         title : "Choux pastry",
         price : "400UAH/4pcs",
     },
     {
-        src : "../img/catal-1-1x-min.jpg",
-        srcset : "../img/catal-1-2x-min.jpg 2x",
+        src : "./img/catal-1-1x-min.jpg",
+        srcset : "./img/catal-1-2x-min.jpg 2x",
         title : "Сhocolate cake with raspberries",
         price : "1000UAH/2kg",
     },
