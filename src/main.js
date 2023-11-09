@@ -1,6 +1,6 @@
 // import './js/bestSellers.js';
 
-import { responseBestSellers } from '../js/cakesApi';
+import { responseBestSellers } from './js/cakesApi';
 
 const refs = {
   prevEl: document.querySelector('.prevEl'),
