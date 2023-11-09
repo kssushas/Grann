@@ -21,7 +21,7 @@ renderBestProd(counter);
 
 function renderBestProd(counter) {
   console.log(markupBest(counter) + markupBest(counter+1))
-  refs.bestlist.innerHTML = markupBest(counter) + markupBest(counter + 1);;
+  // refs.bestlist.innerHTML = markupBest(counter) + markupBest(counter + 1);
   switch (counter) {
     case 0:
       refs.el1.style.fill = '#705A66';
