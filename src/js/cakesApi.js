@@ -1,25 +1,25 @@
 const responseBestSellers = [
     {
-        src : "../../img/best-1-1x.jpg",
-        srcset : "../../img/best-1-2x-min.jpg 2x",
+        src : "./img/best-1-1x.jpg",
+        srcset : "./img/best-1-2x-min.jpg 2x",
         title : "Mango-Passionfruit mousse cake",
         price : "1200UAH/3kg",
     },
     {
-        src : "../../img/best-2-1x.jpg",
-        srcset : "../../img/best-2-2x-min.jpg 2x",
+        src : "./img/best-2-1x.jpg",
+        srcset : "./img/best-2-2x-min.jpg 2x",
         title : "Chocolate brownie",
         price : "300UAH/3pcs",
     },
     {
-        src : "../../src/img/best-3-1x-min.jpg",
-        srcset : "../../src/img/best-3-2x-min.jpg 2x",
+        src : "../img/best-3-1x-min.jpg",
+        srcset : "../img/best-3-2x-min.jpg 2x",
         title : "Choux pastry",
         price : "400UAH/4pcs",
     },
     {
-        src : "../src/img/catal-1-1x-min.jpg",
-        srcset : "../src/img/catal-1-2x-min.jpg 2x",
+        src : "../img/catal-1-1x-min.jpg",
+        srcset : "../img/catal-1-2x-min.jpg 2x",
         title : "Сhocolate cake with raspberries",
         price : "1000UAH/2kg",
     },
