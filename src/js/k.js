@@ -8,4 +8,4 @@ const d = [
 ]
 
 const li = document.querySelector('.li')
-li.innerHTML = `<li><img src =${d[0].src} alt='shhs'></li><li><img src =${d[1].src} alt='shhs'></li>`
+// li.innerHTML = `<li><img src ="${d[0].src}" alt='shhs'></li><li><img src = "${d[1].src}" alt='shhs'></li>`
