@@ -69,7 +69,7 @@ function markupBest(counter) {
   return responseBestSellers
     .map((el, index) => {
       if (counter === index) {
-        return `<li class="best-item "><img srcset=".${el.srcset}" src=".${el.src}" alt="cakes" loading ="lazy" class="best-img fade-in"><div class="best-wrap"><h4 class="best-list-title">${el.title}</h4><p class="best-list-p">${el.price}</p><svg class="best-shop-card" width="30" height="30"><use href="../img/svg.svg#icon-shoping-cart"></use></svg></div></li>`;
+        return `<li class="best-item "><img srcset="${el.srcset}" src="${el.src}" alt="cakes" loading ="lazy" class="best-img fade-in"><div class="best-wrap"><h4 class="best-list-title">${el.title}</h4><p class="best-list-p">${el.price}</p><svg class="best-shop-card" width="30" height="30"><use href="../img/svg.svg#icon-shoping-cart"></use></svg></div></li>`;
       }
     })
     .join(' ');
