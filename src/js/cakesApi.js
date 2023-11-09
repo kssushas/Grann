@@ -1,13 +1,13 @@
 const responseBestSellers = [
     {
-        src : "./img/best-1-1x.jpg",
-        srcset : "./img/best-1-2x-min.jpg 2x",
+        src : "../img/best-1-1x.jpg",
+        srcset : "../img/best-1-2x-min.jpg 2x",
         title : "Mango-Passionfruit mousse cake",
         price : "1200UAH/3kg",
     },
     {
-        src : "./img/best-2-1x.jpg",
-        srcset : "./img/best-2-2x-min.jpg 2x",
+        src : "../img/best-2-1x.jpg",
+        srcset : "../img/best-2-2x-min.jpg 2x",
         title : "Chocolate brownie",
         price : "300UAH/3pcs",
     },

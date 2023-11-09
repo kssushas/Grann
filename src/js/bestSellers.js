@@ -20,8 +20,7 @@ refs.prevEl.style.backgroundColor = 'transparent';
 renderBestProd(counter);
 
 function renderBestProd(counter) {
-  let p = markupBest(counter) + markupBest(counter + 1);
-  refs.bestlist.innerHTML = p;
+  refs.bestlist.innerHTML = markupBest(counter) + markupBest(counter + 1);;
   switch (counter) {
     case 0:
       refs.el1.style.fill = '#705A66';
