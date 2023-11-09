@@ -1,7 +1,5 @@
 import { responseBestSellers } from '../js/cakesApi';
 
-
-
 const refs = {
   prevEl: document.querySelector('.prevEl'),
   nextEl: document.querySelector('.nextEl'),
