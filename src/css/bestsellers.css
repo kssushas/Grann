@@ -1,5 +1,5 @@
 .bestsellers-section{
-    padding-top: 133px;
+    padding: 133px 0 120px;
 }
 
 .best-title{
@@ -9,13 +9,6 @@
     font-size: 80px;
     font-weight: 900;
     line-height: 83px;
-}
-
-.bestlist{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
 }
 
 .best-list-title{
@@ -117,7 +110,7 @@ transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .best-fullRange-btn{
     display: block;
-    margin: 32px auto 120px;
+    margin: 32px auto 0;
     padding: 12px 38px;
     font-family: 'Montserrat';
 font-size: 18px;
@@ -140,12 +133,21 @@ border-radius: 10px;
     .best-img{
         max-width: 350px;
     }
+
+    .bestlist{
+        margin: 0 auto;
+        min-height: 860px;
+        width: 355px;
+    }
+    .best-item:not(:last-child){
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (min-width: 1000px){
 
    .bestsellers-container{
-    padding-left: 100px;
+    padding-left: 80px;
    }
 
    .best-mob-btn{
@@ -161,8 +163,10 @@ border-radius: 10px;
    }
 
     .bestlist{
+        display: flex;
         justify-content: start;
         flex-wrap: nowrap;
+        gap: 28px;
         overflow: hidden;
     }
 
