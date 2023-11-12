@@ -1,7 +1,9 @@
+import img from '../img/best-1-1x.jpg';
+import img2 from '../img/best-1-2x-min.jpg';
 const responseBestSellers = [
     {
-        src : "./img/best-1-1x.jpg",
-        srcset : "./img/best-1-2x-min.jpg 2x",
+        src : img,
+        srcset : img2,
         title : "Mango-Passionfruit mousse cake",
         price : "1200UAH/3kg",
     },
