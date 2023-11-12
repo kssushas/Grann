@@ -3,6 +3,7 @@
 @import url('./main.css');
 @import url('./galary.css');
 @import url('./bestsellers.css');
+@import url('./why.css');
 
 @font-face {
   font-family: 'Jeff';
@@ -25,10 +26,9 @@
   --bg-main-color: #F5F7F8;
   --bg-color:#F5EEE0;
   --foter-color: #705A66;
-  ;
+  --hover-color: #DDD5C6;
+font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
   color: var(--foter-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,6 +46,8 @@ body{
   position: relative;
   margin: 0 auto;
   max-width: 775px;
+  padding: 0 20px;
+  /* overflow: hidden; */
 }
 
 @media screen and (min-width: 1000px) {

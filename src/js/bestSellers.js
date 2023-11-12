@@ -3,6 +3,8 @@ import { responseBestSellers } from '../js/cakesApi';
 const refs = {
   prevEl: document.querySelector('.prevEl'),
   nextEl: document.querySelector('.nextEl'),
+  nextElMob : document.querySelector('.nextElMob'),
+  prevElMob : document.querySelector('.prevElMob'),
   bestlist: document.querySelector('.bestlist'),
   el1: document.querySelector('.el-1'),
   el2: document.querySelector('.el-2'),
@@ -17,9 +19,6 @@ let counter = 0;
 let total = '';
 
 if (screenWidth > 1000) {
-  refs.el3.style.display = 'none';
-  refs.el1.style.display = 'none';
-  refs.el2.style.display = 'none';
 
   const numberOfVisibleEl = 4;
   refs.nextEl.addEventListener('click', clickOnNextElDesk);
@@ -81,8 +80,8 @@ if (screenWidth > 1000) {
 }
 
 if (screenWidth < 1000) {
-  refs.nextEl.addEventListener('click', clickOnNextEl);
-  refs.prevEl.addEventListener('click', clickOnPrevEl);
+  refs.nextElMob.addEventListener('click', clickOnNextEl);
+  refs.prevElMob.addEventListener('click', clickOnPrevEl);
 
   renderBestProd(counter);
 
@@ -94,22 +93,22 @@ if (screenWidth < 1000) {
         refs.el1.style.fill = '#705A66';
         refs.el2.style.fill = '#F5EEE0';
         refs.el3.style.fill = '#F5EEE0';
-        refs.prevEl.style.backgroundColor = 'transparent';
-        refs.nextEl.style.backgroundColor = '#F5EEE0';
+        refs.prevElMob.style.backgroundColor = 'transparent';
+        refs.nextElMob.style.backgroundColor = '#F5EEE0';
         break;
       case 2:
         refs.el1.style.fill = '#F5EEE0';
         refs.el2.style.fill = '#705A66';
         refs.el3.style.fill = '#F5EEE0';
-        refs.nextEl.style.backgroundColor = '#F5EEE0';
-        refs.prevEl.style.backgroundColor = '#F5EEE0';
+        refs.nextElMob.style.backgroundColor = '#F5EEE0';
+        refs.prevElMob.style.backgroundColor = '#F5EEE0';
         break;
       case 4:
         refs.el1.style.fill = '#F5EEE0';
         refs.el2.style.fill = '#F5EEE0';
         refs.el3.style.fill = '#705A66';
-        refs.nextEl.style.backgroundColor = 'transparent';
-        refs.prevEl.style.backgroundColor = '#F5EEE0';
+        refs.nextElMob.style.backgroundColor = 'transparent';
+        refs.prevElMob.style.backgroundColor = '#F5EEE0';
         break;
     }
   }
@@ -135,7 +134,19 @@ function markupBest(counter) {
   return responseBestSellers
     .map((el, index) => {
       if (counter === index) {
-        return `<li class="best-item"><img srcset="${el.srcset}" src="${el.src}" alt="cakes" loading ="lazy" class="best-img fade-in"><div class="best-wrap"><h4 class="best-list-title">${el.title}</h4><p class="best-list-p">${el.price}</p><svg class="best-shop-card" width="30" height="30"><use href="../img/svg.svg#icon-shoping-cart"></use></svg></div></li>`;
+        return `<li class="best-item">
+        <div class="best-img-cover">
+        <img srcset="${el.srcset}" src="${el.src}" alt="cakes" loading ="lazy" class="best-img fade-in">
+        <div class="best-btn-wrap">
+        <button class="best-detailed-btn">LEARN MORE</button>
+        </div>
+        </div>
+        <div class="best-wrap">
+        <h4 class="best-list-title">${el.title}</h4>
+        <p class="best-list-p">${el.price}</p>
+        <svg class="best-shop-card" width="30" height="30"><use href="../img/svg.svg#icon-shoping-cart"></use></svg>
+        </div>
+        </li>`;
       }
     })
     .join(' ');
