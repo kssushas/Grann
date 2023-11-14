@@ -1,0 +1,133 @@
+@media screen and (max-width: 999px){
+.do-section{
+  background-image: url('../img/do-mob-bg-min.jpg');
+}
+}
+
+.do-section{
+    padding: 56px 0;
+    background-size: cover;
+  }
+
+.do-form{
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.do-input{
+    margin-bottom: 24px;
+    outline: transparent;
+    color: var(--foter-color);
+    width: 100%;
+    height: 60px;
+    padding-left: 21px;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--bg-main-color);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.do-input::placeholder{
+    font-family: 'Montserrat';
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+color: var(--foter-color);
+}
+
+.do-textarea{
+    resize: none;
+    outline: transparent;
+    color: var(--foter-color);
+    width: 100%;
+    min-height: 180px;
+    padding: 19px 0 0 21px;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--bg-main-color);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+.do-textarea::placeholder{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: var(--foter-color);
+}
+
+.do-input:hover, .do-textarea:hover{
+    box-shadow: 4px 2px 5px rgba(242, 238, 240, 0.852);
+}
+
+.do-bnt{
+    width: 100%;
+    padding: 23px 0;
+    font-family: 'Montserrat';
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+   border: none;
+    outline: transparent;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    color: var(--foter-color);
+}
+
+.do-title{
+font-family: 'Jeff';
+font-size: 38px;
+font-weight: 400;
+line-height: 45.8px;
+color: var(--bg-main-color);
+transform: rotate(-4deg);
+}
+
+.do-text{
+line-height: 21px;
+color: var(--bg-main-color);
+margin: 24px 0 32px;
+}
+
+
+@media screen and (min-width: 1000px){
+   .do-section{
+    background-image: url('../img/do-desk-bg-min.jpg');
+    padding: 62px 0;
+   }
+
+   .do-wrap{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+   }
+
+   .do-wrap-text{
+    max-width: 500px;
+    padding-top: 80px;
+   }
+
+   .do-form{
+    margin: 0;
+   }
+
+   .do-title{
+    font-size: 54px;
+    line-height: 65px;
+   }
+
+   .do-text{
+font-size: 18px;
+line-height: 23px;
+   }
+   .do-bnt{
+    font-size: 24px;
+   }
+}

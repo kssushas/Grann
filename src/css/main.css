@@ -11,10 +11,10 @@ main{
 
 .main-grann{
     font-family: 'Moniqa';
-font-size: 120px;
 font-weight: 900;
-line-height: 125px;
 text-align: center;
+font-size: 120px;
+line-height: 125px;
 }
 
 .main-p-undergrann{

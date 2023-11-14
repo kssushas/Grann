@@ -4,11 +4,6 @@
 
 .best-title{
     margin-bottom: 32px;
-    text-align: center;
-    font-family: 'Moniqa';
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 83px;
 }
 
 .best-list-title{
@@ -54,20 +49,6 @@ line-height: 20px;
 .best-elipse{
     display: flex;
     gap: 20px;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .best-img-cover{

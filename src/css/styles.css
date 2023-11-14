@@ -1,9 +1,13 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./main.css');
 @import url('./galary.css');
 @import url('./bestsellers.css');
 @import url('./why.css');
+@import url('./about.css');
+@import url('./do.css');
+@import url('./question.css');
 
 @font-face {
   font-family: 'Jeff';
@@ -25,10 +29,11 @@
 :root {
   --bg-main-color: #F5F7F8;
   --bg-color:#F5EEE0;
-  --foter-color: #705A66;
+  --foter-color: #705c67;
   --hover-color: #DDD5C6;
 font-weight: 300;
   font-size: 16px;
+line-height: 22px;
   color: var(--foter-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,11 +54,40 @@ body{
 }
 
 .padding-container{
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.title{
+  font-family: 'Moniqa';
+font-weight: 900;
+text-align: center;
+font-size: 80px;
+    line-height: 83px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 
 @media screen and (min-width: 1000px) {
   .container{
     max-width: 1400px;
+  }
+
+  .title{
+    font-size: 100px;
+  line-height: 104px;
   }
 }

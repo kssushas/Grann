@@ -14,11 +14,6 @@
  
    .why-title{
      margin: 0 auto 48px;
-     font-family: 'Moniqa';
- font-size: 80px;
- font-weight: 900;
- line-height: 83px;
- text-align: center;
    }
  
    .why-list{
@@ -171,9 +166,7 @@
   border-right: 1px solid var(--hover-color);
   border-left: 1px solid var(--hover-color);
 }
-.why-section{
- /* padding-bottom: 159px; */
-}
+
 .about-title{
   display: none;
 }
