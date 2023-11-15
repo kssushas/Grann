@@ -1,0 +1,118 @@
+.instagram-section{
+    margin-bottom: 120px;
+}
+
+.inst-desk-btn{
+    display: none;
+}
+
+.inst-desk-icon{
+    display: none;
+}
+
+@media screen and (max-width: 999px){
+.insta-img{
+    min-width: 261px;
+}
+}
+
+.insta-container{
+    padding-left: 10px;
+}
+
+.inst-navigation{
+    margin: 24px auto 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+}
+
+.inst-elipce{
+    display: flex;
+    gap: 20px;
+}
+
+.item-elipce{
+    width: 11px;
+    height: 11px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+.insta-list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 420px;
+    margin: 48px auto 0;
+}
+
+.js-next-el{
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 1000px){
+   .inst-navigation{
+    display: none;
+   }
+
+   .insta-img{
+    width: 393px;
+}
+
+   .insta-list{
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 64px auto 0;
+   }
+
+   .insta-container{
+    padding: 0 10px;
+    position: relative;
+   }
+
+   .inst-desk-btn{
+    display: block;
+    margin: 62px auto 0;
+    padding: 19px 130px;
+   background-color: var(--bg-color);
+   color: var(--foter-color);
+   border-radius: 10px;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+position: relative;
+   }
+
+   .inst-desk-btn::after{
+    content: url('data:image/svg+xml,<svg width="30" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 26c.376-4.052 4.432-6.443 7.016-8.889C15.1 11.353 20.922 6.158 28 2" stroke="%23705A66" stroke-width="3" stroke-linecap="round"/></svg>');
+    position: absolute;
+    width: 26px;
+    height: 24px;
+    top: -29px;
+    right: -27px;
+
+   }
+
+   .inst-desk-btn::before{
+    content: url('data:image/svg+xml,<svg width="27" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.52 11C-3.842 9.252 17.537 2 25 2" stroke="%23705A66" stroke-width="3" stroke-linecap="round"/></svg>');
+    height: 9px;
+    width: 23px;
+    position: absolute;
+    top: -9px;
+    right: -27px;
+   }
+
+   .inst-desk-icon{
+    display: block;
+    position: absolute;
+    bottom: 23px;
+    fill: var(--foter-color);
+    left: 17.9%;
+    z-index: 1;
+   }
+}
