@@ -1,0 +1,30 @@
+footer{
+    padding: 64px 0 100px;
+    color: var(--bg-main-color);
+    background-color: var(--foter-color);
+}
+.foter-logo{
+    width: 255px;
+    margin: 0 auto 48px;
+}
+
+.foter-text{
+font-size: 18px;
+text-align: center;
+}
+
+.foter-text:not(:last-child):not(:nth-child(4)){
+    margin-bottom: 24px;
+}
+
+.footer-icon-list{
+    margin: 40px auto;
+    display: flex;
+    width: 182px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foter-icon{
+    fill: var(--bg-main-color);
+}

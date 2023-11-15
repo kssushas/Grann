@@ -59,6 +59,10 @@ line-height: 125px;
     line-height: 22px;
 }
 
+.main-soc-icon{
+    fill: var(--foter-color);
+}
+
 
 @media screen and (min-width: 1000px) {
     .main-grann{
