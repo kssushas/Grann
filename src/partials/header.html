@@ -11,11 +11,27 @@
       <li class="header-item-nav">Delivery</li>
       <li class="header-item-nav">Contacts</li>
     </ul>
-      <svg class = "header-icon-menu" width="22" height="17">
+      <svg class = "header-icon-menu" width="22" height="17" data-menu-open>
         <use href = "./img/svg.svg#icon-menu-mob"></use>
       </svg>
       <svg class = "header-shopping-card" width="25" height="25">
         <use  href="./img/svg.svg#icon-shoping-cart"></use>
       </svg>
+  </div>
+  <div class="mob-menu is-hidden" data-menu>
+     <div class="mob-container">
+      <button type="button" class="menu-close-btn" data-menu-close>
+        <svg class="icon-close-menu" width="20" height="20">
+          <use href="./img/svg.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-list">
+        <li class="mob-item"><a href="#bestSellers" class="mob-link">BestSellers</a></li>
+        <li class="mob-item"><a href="" class="mob-link">Catalog</a></li>
+        <li class="mob-item"><a href="#delivery" class="mob-link">Delivery</a></li>
+        <li class="mob-item"><a href="#about" class="mob-link">About me</a></li>
+      </ul>
+      <img srcset="./img/mob-2x-min.png" src="./img/mob-1x-min.png" alt="cakes" class="mob-img">
+     </div>
   </div>
   </header>

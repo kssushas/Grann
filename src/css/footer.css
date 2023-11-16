@@ -1,5 +1,5 @@
 footer{
-    padding: 64px 0 100px;
+    padding: 64px 20px 100px;
     color: var(--bg-main-color);
     background-color: var(--foter-color);
 }
@@ -27,4 +27,36 @@ text-align: center;
 
 .foter-icon{
     fill: var(--bg-main-color);
+}
+
+.foter-icon:hover,.foter-icon:focus{
+  fill: var(--hover-icon-color);
+}
+
+@media screen and (min-width: 1000px) {
+
+    footer{
+        padding: 88px 100px;
+    }
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .foter-logo{
+    order: 1;
+  }
+
+  .footer-wrap{
+    order: 2;
+  }
+
+  .foter-logo{
+    margin: 0;
+  }
+
+  .footer-icon-list{
+      margin: 0 0 32px 0;
+  }
 }
