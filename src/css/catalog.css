@@ -1,3 +1,10 @@
+.catalog-container{
+    padding: 24px 5px 0;
+}
+
+.catalog-title{
+    margin: 32px auto 24px;
+}
 .swiper {
    width: 100%;
 }
@@ -5,11 +12,6 @@
 .swiper-slide{
     width: auto;
 }
-
-/* .content-card{
-    min-height: 200px;
-
-} */
 
 
  .catalog-btn{
@@ -24,3 +26,16 @@ line-height: 20px;
  }
   
 
+ @media screen and (min-width: 600px) {
+    .swiper-wrapper{
+        display: flex;
+        gap: 32px;
+    }
+
+  
+}
+@media screen and (min-width: 1000px) {
+.catalog-container{
+        padding: 24px 100px 0;
+    }
+}

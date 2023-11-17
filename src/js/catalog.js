@@ -1,12 +1,11 @@
+// import Swiper from 'swiper/bundle';
+// import 'swiper/bundle.min.css';
+
+import Swiper from 'swiper';
+if (window.innerWidth<600){
+
 new Swiper ('.swiper', {
-    
-        
-        spaceBetween: 20,
-        slidesPerView: 2,
-        // freeMode: true,
-        // breakpoints: {
-        //   1200: {
-        //     spaceBetween: 20,
-        //   }
-        // }
+        spaceBetween: 16,
+        slidesPerView: 'auto',
 })
+}
