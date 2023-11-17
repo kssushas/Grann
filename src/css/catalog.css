@@ -1,0 +1,26 @@
+.swiper {
+   width: 100%;
+}
+
+.swiper-slide{
+    width: auto;
+}
+
+/* .content-card{
+    min-height: 200px;
+
+} */
+
+
+ .catalog-btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: var(--foter-color);
+font-size: 16px;
+font-weight: 300;
+line-height: 20px;
+    border-radius: 100px;
+    border: 1px solid var(--foter-color);
+ }
+  
+

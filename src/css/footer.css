@@ -39,21 +39,17 @@ text-align: center;
         padding: 88px 100px;
     }
   .footer-container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .foter-logo{
-    order: 1;
-  }
-
-  .footer-wrap{
-    order: 2;
-  }
-
-  .foter-logo{
-    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
   .footer-icon-list{

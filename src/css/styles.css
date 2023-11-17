@@ -1,5 +1,6 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 @import url('./reset.css');
+@import url('./common.css');
 @import url('./header.css');
 @import url('./main.css');
 @import url('./galary.css');
@@ -11,87 +12,9 @@
 @import url('./instargam.css');
 @import url('./footer.css');
 
-@font-face {
-  font-family: 'Jeff';
-  src: url('../fonts/jeff_script_1-webfont.woff2') format('woff2'),
-       url('../fonts/jeff_script_1-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'Moniqa';
-  src: url('../fonts/moniqa-black-display-webfont.woff2') format('woff2'),
-       url('../fonts/moniqa-black-display-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-:root {
-  --bg-main-color: #F5F7F8;
-  --bg-color:#F5EEE0;
-  --foter-color: #705c67;
-  --hover-color: #DDD5C6;
-  --hover-icon-color : #ececa9;
-  --hover-main-icon-color: #452121;
-font-weight: 300;
-  font-size: 16px;
-line-height: 22px;
-  color: var(--foter-color);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-body{
-  background-color: var(--bg-main-color);
-  font-family: 'Montserrat';
-}
-
-.container{
-  position: relative;
-  margin: 0 auto;
-  max-width: 775px;
-}
-
-.padding-container{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.title{
-  font-family: 'Moniqa';
-font-weight: 900;
-text-align: center;
-font-size: 80px;
-    line-height: 83px;
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 2s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
+@media screen and (min-width: 1000px){
+  .header{
+    background-color: var(--bg-color);
   }
 }
 
-
-@media screen and (min-width: 1000px) {
-  .container{
-    max-width: 1400px;
-  }
-
-  .title{
-    font-size: 100px;
-  line-height: 104px;
-  }
-}
