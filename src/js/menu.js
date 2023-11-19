@@ -36,7 +36,10 @@ function clickOnLink(e) {
     document.body.classList.toggle('no-scroll');
   
 
-  }   
+  }  
+  
+  console.log( window.location.pathname)
+  console.log( window.location)
   // if( hrefLink !== window.location.pathname) {
   //   window.location = `${hrefLink}#${targetId}`;
   // }
