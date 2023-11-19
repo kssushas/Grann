@@ -27,8 +27,6 @@ function clickOnLink(e) {
   const targetId = this.getAttribute('href').split('#')[1];
   const targetElement = document.getElementById(targetId);
 
-  if(hrefLink === window.location.pathname){
-
   if (targetElement) {
     targetElement.scrollIntoView({
       behavior: 'smooth',
@@ -36,9 +34,10 @@ function clickOnLink(e) {
 
     refs.menu.classList.add('is-hidden');
     document.body.classList.toggle('no-scroll');
-  }
+  
 
-  } else {
+  }   
+  if( hrefLink !== window.location.pathname) {
     window.location.href = `${hrefLink}#${targetId}`;
   }
 }
