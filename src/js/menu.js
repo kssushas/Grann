@@ -46,7 +46,7 @@ function clickOnLink(e) {
   //   window.location = `${hrefLink}#${targetId}`;
   // }
  if( `/Grann/${hrefLink}` !== window.location.pathname) {
-window.location.href = `https://kssushas.github.io/Grann/${hrefLink}`
+window.location.href = `https://kssushas.github.io/Grann/${hrefLink}#${targetId}`
   }
 
  
