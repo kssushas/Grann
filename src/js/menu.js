@@ -5,11 +5,13 @@ const refs = {
   mobileMenuLinks: document.querySelectorAll('.mob-link'),
 };
 
-const mob = document.querySelector('mob');
+const mob = document.querySelector('.mob');
 mob.addEventListener('click', ()=> {
   console.log(window.location)
   console.log(window.location.href)
   console.log(window.location.pathname)
+  refs.menu.classList.add('is-hidden');
+    document.body.classList.toggle('no-scroll');
 })
 
 refs.openMenuBtn.addEventListener('click', toggleMenu);
