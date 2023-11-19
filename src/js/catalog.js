@@ -56,7 +56,7 @@ function markupCatalog(data) {
         <div class="catal-wrap">
         <h4 class="catal-list-title">${el.title}</h4>
         <p class="catal-list-p">${el.price}</p>
-        <svg class="catal-shop-card"><use href="../img/svg.svg#icon-shoping-cart"></use></svg>
+        <svg class="catal-shop-card"><use href="./img/svg.svg#icon-shoping-cart"></use></svg>
         </div>
         </li>`;
     })

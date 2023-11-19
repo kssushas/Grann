@@ -22,9 +22,12 @@ function documentFunction() {
 
 function clickOnLink(e) {
   e.preventDefault();
-
-  const targetId = this.getAttribute('href').substring(1);
+ 
+  const hrefLink = this.getAttribute('href').split('#')[0];
+  const targetId = this.getAttribute('href').split('#')[1];
   const targetElement = document.getElementById(targetId);
+
+  if(hrefLink === window.location.pathname){
 
   if (targetElement) {
     targetElement.scrollIntoView({
@@ -33,5 +36,9 @@ function clickOnLink(e) {
 
     refs.menu.classList.add('is-hidden');
     document.body.classList.toggle('no-scroll');
+  }
+
+  } else {
+    window.location.href = `${hrefLink}#${targetId}`;
   }
 }
