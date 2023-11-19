@@ -38,9 +38,17 @@ function clickOnLink(e) {
 
   }  
   
+  console.log(hrefLink)
+  console.log(targetId)
   console.log( window.location.pathname)
   console.log( window.location)
   // if( hrefLink !== window.location.pathname) {
   //   window.location = `${hrefLink}#${targetId}`;
   // }
+ if( `/Grann/${hrefLink}` !== window.location.pathname) {
+window.location.href = `https://kssushas.github.io/Grann/${hrefLink}`
+  }
+
+ 
+  
 }
