@@ -5,6 +5,13 @@ const refs = {
   mobileMenuLinks: document.querySelectorAll('.mob-link'),
 };
 
+const mob = document.querySelector('mob');
+mob.addEventListener('click', ()=> {
+  console.log(window.location)
+  console.log(window.location.href)
+  console.log(window.location.pathname)
+})
+
 refs.openMenuBtn.addEventListener('click', toggleMenu);
 refs.closeMenuBtn.addEventListener('click', toggleMenu);
 document.addEventListener('DOMContentLoaded', documentFunction);
