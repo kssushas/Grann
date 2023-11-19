@@ -37,7 +37,7 @@ function clickOnLink(e) {
   
 
   }   
-  if( hrefLink !== window.location.pathname) {
-    window.location.href = `${hrefLink}#${targetId}`;
-  }
+  // if( hrefLink !== window.location.pathname) {
+  //   window.location = `${hrefLink}#${targetId}`;
+  // }
 }
