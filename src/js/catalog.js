@@ -5,6 +5,7 @@ import {
   responsePizza,
   responseBestSellers,
 } from './cakesApi';
+import svg from '../img/svg.svg#icon-shoping-cart';
 
 if (window.innerWidth < 600) {
   new Swiper('.swiper', {
@@ -56,7 +57,7 @@ function markupCatalog(data) {
         <div class="catal-wrap">
         <h4 class="catal-list-title">${el.title}</h4>
         <p class="catal-list-p">${el.price}</p>
-        <svg class="catal-shop-card"><use href="./img/svg.svg#icon-shoping-cart"></use></svg>
+        <svg class="catal-shop-card"><use href="${svg}"></use></svg>
         </div>
         </li>`;
     })

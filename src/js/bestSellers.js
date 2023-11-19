@@ -1,4 +1,5 @@
 import { responseBestSellers } from '../js/cakesApi';
+import svg from '../img/svg.svg#icon-shoping-cart';
 
 const refs = {
   prevEl: document.querySelector('.prevEl'),
@@ -144,7 +145,7 @@ function markupBest(counter) {
         <div class="best-wrap">
         <h4 class="best-list-title">${el.title}</h4>
         <p class="best-list-p">${el.price}</p>
-        <svg class="best-shop-card" width="30" height="30"><use href="./img/svg.svg#icon-shoping-cart"></use></svg>
+        <svg class="best-shop-card" width="30" height="30"><use href="${svg}"></use></svg>
         </div>
         </li>`;
       }

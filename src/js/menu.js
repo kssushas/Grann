@@ -6,6 +6,7 @@ const refs = {
 };
 
 const ghUrl = 'https://kssushas.github.io/Grann/';
+const localePath = '/Grann/';
 
 refs.openMenuBtn.addEventListener('click', toggleMenu);
 refs.closeMenuBtn.addEventListener('click', toggleMenu);
@@ -38,7 +39,7 @@ function clickOnLink(e) {
     document.body.classList.toggle('no-scroll');
   }  
   
- if( `/Grann/${hrefLink}` !== window.location.pathname) {
+ if( `${localePath}${hrefLink}` !== window.location.pathname) {
 window.location.href = `${ghUrl}${hrefLink}#${targetId}`
   }
 
