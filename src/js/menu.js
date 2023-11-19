@@ -5,14 +5,7 @@ const refs = {
   mobileMenuLinks: document.querySelectorAll('.mob-link'),
 };
 
-const mob = document.querySelector('.mob');
-mob.addEventListener('click', ()=> {
-  console.log(window.location)
-  console.log(window.location.href)
-  console.log(window.location.pathname)
-  refs.menu.classList.add('is-hidden');
-    document.body.classList.toggle('no-scroll');
-})
+const ghUrl = 'https://kssushas.github.io/Grann/';
 
 refs.openMenuBtn.addEventListener('click', toggleMenu);
 refs.closeMenuBtn.addEventListener('click', toggleMenu);
@@ -43,21 +36,11 @@ function clickOnLink(e) {
 
     refs.menu.classList.add('is-hidden');
     document.body.classList.toggle('no-scroll');
-  
-
   }  
   
-  console.log(hrefLink)
-  console.log(targetId)
-  console.log( window.location.pathname)
-  console.log( window.location)
-  // if( hrefLink !== window.location.pathname) {
-  //   window.location = `${hrefLink}#${targetId}`;
-  // }
  if( `/Grann/${hrefLink}` !== window.location.pathname) {
-window.location.href = `https://kssushas.github.io/Grann/${hrefLink}#${targetId}`
+window.location.href = `${ghUrl}${hrefLink}#${targetId}`
   }
 
- 
-  
+
 }
