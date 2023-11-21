@@ -8,9 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Tomorrow:wght@900&display=swap" rel="stylesheet">
     
 
-    <script type="module" crossorigin src="/Grann/assets/catalog-2992b1d1.js"></script>
-    <link rel="modulepreload" crossorigin href="/Grann/assets/svg-d2dbeb07.js">
-    <link rel="stylesheet" href="/Grann/assets/catalog-f94f87e8.css">
+    <script type="module" crossorigin src="/Grann/assets/catalog-240c1697.js"></script>
+    <link rel="modulepreload" crossorigin href="/Grann/assets/shopingCart-87654fb5.js">
+    <link rel="stylesheet" href="/Grann/assets/catalog-3549e656.css">
   </head>
   <body>
     <header class="header">
@@ -27,29 +27,13 @@
       <li class="header-item-nav">Contacts</li>
     </ul>
       <svg class = "header-icon-menu" width="22" height="17" data-menu-open>
-        <use href = "/Grann/assets/svg-f7b93bf1.svg#icon-menu-mob"></use>
+        <use href = "/Grann/assets/svg-85fb7ccb.svg#icon-menu-mob"></use>
       </svg>
-      <svg class = "header-shopping-card" width="25" height="25">
-        <use  href="/Grann/assets/svg-f7b93bf1.svg#icon-shoping-cart"></use>
+      <svg class = "header-shopping-card" width="25" height="25" data-shopList-open>
+        <use  href="/Grann/assets/svg-85fb7ccb.svg#icon-shoping-cart"></use>
       </svg>
   </div>
   </header>
-    <div class="mob-menu is-hidden" data-menu>
-    <div class="mob-container">
-     <button type="button" class="menu-close-btn" data-menu-close>
-       <svg class="icon-close-menu" width="20" height="20">
-         <use href="/Grann/assets/svg-f7b93bf1.svg#icon-menu-close"></use>
-       </svg>
-     </button>
-     <ul class="mob-list">
-       <li class="mob-item"><a href="/index.html#bestsellers" class="mob-link">BestSellers</a></li>
-       <li class="mob-item"><a href="/catalog.html#catalog" class="mob-link">Catalog</a></li>
-       <li class="mob-item"><a href="/index.html#delivery" class="mob-link">Delivery</a></li>
-       <li class="mob-item"><a href="/index.html#about" class="mob-link">About me</a></li>
-     </ul>
-     <img srcset="/Grann/assets/mob-2x-min-3dccb96c.png " src="/Grann/assets/mob-1x-min-1f8bb4a3.png" alt="cakes" class="mob-img">
-    </div>
- </div>
     <section class="catalog">
     <div class="catalog-container">
         <a href="./index.html" class="catalog-link"><span class="catalog-link-main">Main/</span>Catalog</a>
@@ -75,9 +59,39 @@
                 </div>
             </div>
         </div></div>
-        <ul class="catalog-list"></ul>
+        <ul class="catalog-list storage-js"></ul>
      
 </section>
+    <div class="mob-menu is-hidden" data-menu>
+    <div class="mob-container">
+     <button type="button" class="menu-close-btn" data-menu-close>
+       <svg class="icon-close-menu" width="20" height="20">
+         <use href="/Grann/assets/svg-85fb7ccb.svg#icon-menu-close"></use>
+       </svg>
+     </button>
+     <ul class="mob-list">
+       <li class="mob-item"><a href="/index.html#bestsellers" class="mob-link">BestSellers</a></li>
+       <li class="mob-item"><a href="/catalog.html#catalog" class="mob-link">Catalog</a></li>
+       <li class="mob-item"><a href="/index.html#delivery" class="mob-link">Delivery</a></li>
+       <li class="mob-item"><a href="/index.html#about" class="mob-link">About me</a></li>
+     </ul>
+     <img srcset="/Grann/assets/mob-2x-min-3dccb96c.png " src="/Grann/assets/mob-1x-min-1f8bb4a3.png" alt="cakes" class="mob-img">
+    </div>
+ </div>
+    <div class="shop-menu is-hidden" data-shopList>
+  <div class="shop-container">
+    <div class="title-wrap">
+      <h1 class="shop-title">Your order:</h1>
+      <button type="button" class="shop-close-btn" data-shopList-close>
+        <svg class="icon-close-shop" width="32" height="32">
+          <use href="/Grann/assets/svg-85fb7ccb.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="shopList"></ul>
+  </div>
+</div>
+
     <footer>
     <div class="container footer-container">
       <img srcset="/Grann/assets/foter-logo-2x-min-3127272e.png " src="/Grann/assets/foter-logo-1x-min-7164e666.png" alt="logo" class="foter-logo">
@@ -95,7 +109,7 @@
             rel="noopener noreferrer"
             >
           <svg class="foter-icon" width="34" height="34">
-            <use href="/Grann/assets/svg-f7b93bf1.svg#icon-Instagram"></use>
+            <use href="/Grann/assets/svg-85fb7ccb.svg#icon-Instagram"></use>
           </svg>
           </a>
         </li>
@@ -105,7 +119,7 @@
             target="_blank"
             rel="noopener noreferrer">
           <svg class="foter-icon" width="34" height="30">
-            <use href="/Grann/assets/svg-f7b93bf1.svg#icon-tg"></use>
+            <use href="/Grann/assets/svg-85fb7ccb.svg#icon-tg"></use>
           </svg>
         </a>
         </li>
@@ -116,7 +130,7 @@
             rel="noopener noreferrer"
             >
           <svg class="foter-icon"  width="34" height="34">
-            <use href="/Grann/assets/svg-f7b93bf1.svg#icon-Facebook"></use>
+            <use href="/Grann/assets/svg-85fb7ccb.svg#icon-Facebook"></use>
           </svg>
           </a>
         </li>
