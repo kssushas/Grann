@@ -3,7 +3,7 @@ import {
   dataArray
 } from './cakesApi';
 import svg from '../img/svg.svg#icon-shoping-cart';
-import { checkLocaleStorage } from './localeStorage';
+// import { checkLocaleStorage } from './localeStorage';
 
 if (window.innerWidth < 600) {
   new Swiper('.swiper', {

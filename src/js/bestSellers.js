@@ -1,5 +1,5 @@
 import { responseBestSellers } from '../js/cakesApi';
-import {checkLocaleStorage} from '../js/localeStorage';
+// import {checkLocaleStorage} from '../js/localeStorage';
 import svg from '../img/svg.svg#icon-shoping-cart';
 
 const refs = {
