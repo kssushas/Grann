@@ -79,7 +79,21 @@ line-height: 15px;
     top: 0;
     right: 0;
 }
+
+.catalog-remove-btn{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    line-height: 29px;
+    text-align: center;
+    color: var(--foter-color);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
   
+.catalog-remove-btn:hover, .catalog-remove-btn:focus{
+    background-color: var(--hover-color);
+  }
+
 
  @media screen and (min-width: 600px) {
     .swiper-wrapper{
@@ -129,4 +143,9 @@ line-height: 15px;
         width: 25px;
         height: 25px;
     }
+
+    .catalog-remove-btn{
+        padding: 19px 53px;
+        font-size: 20px;
+      }
 }

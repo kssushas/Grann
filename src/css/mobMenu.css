@@ -46,3 +46,7 @@ letter-spacing: 0.02em;
     height: 216px;
     margin: 0 auto;
 }
+
+.icon-close-menu{
+    fill: var(--bg-main-color);
+}

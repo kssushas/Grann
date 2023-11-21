@@ -1,4 +1,5 @@
 import { responseBestSellers } from '../js/cakesApi';
+import {checkLocaleStorage} from '../js/localeStorage';
 import svg from '../img/svg.svg#icon-shoping-cart';
 
 const refs = {
@@ -30,6 +31,8 @@ if (screenWidth > 1000) {
   }
 
   refs.bestlist.innerHTML = total;
+  checkLocaleStorage();
+ 
 
   const images = document.querySelectorAll('.best-item');
 
@@ -89,6 +92,7 @@ if (screenWidth < 1000) {
   function renderBestProd(counter) {
     total = markupBest(counter) + markupBest(counter + 1);
     refs.bestlist.innerHTML = total;
+    checkLocaleStorage();
     switch (counter) {
       case 0:
         refs.el1.style.fill = '#705A66';
@@ -135,17 +139,17 @@ function markupBest(counter) {
   return responseBestSellers
     .map((el, index) => {
       if (counter === index) {
-        return `<li class="best-item">
-        <div class="best-img-cover">
+        return `<li class="best-item" id=${el.id}>
+        <div class="js-img-cover">
         <img srcset="${el.srcset}" src="${el.src}" alt="cakes" loading ="lazy" class="best-img fade-in">
-        <div class="best-btn-wrap">
-        <button class="best-detailed-btn">LEARN MORE</button>
+        <div class="js-btn-wrap">
+        <button class="js-detailed-btn best-remove-btn">Remove from the shoping list</button>
         </div>
         </div>
         <div class="best-wrap">
         <h4 class="best-list-title">${el.title}</h4>
         <p class="best-list-p">${el.price}</p>
-        <svg class="best-shop-card" width="30" height="30"><use href="${svg}"></use></svg>
+        <svg class="best-shop-card js-add-basket" width="30" height="30"><use href="${svg}"></use></svg>
         </div>
         </li>`;
       }
