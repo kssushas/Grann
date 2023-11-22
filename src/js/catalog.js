@@ -3,7 +3,7 @@ import {
   dataArray
 } from './cakesApi';
 import svg from '../img/svg.svg#icon-shoping-cart';
-// import { checkLocaleStorage } from './localeStorage';
+import { checkLocaleStorage } from '../js/localeStorage';
 
 if (window.innerWidth < 600) {
   new Swiper('.swiper', {
@@ -24,7 +24,7 @@ let selectedBtn = null;
 
 refs.swiperWrapper.addEventListener('click', clickOnBtn);
 refs.catalList.innerHTML = markupCatalog(dataArray[0]);
-// checkLocaleStorage();
+checkLocaleStorage();
 changeBtnColor(0);
 
 function clickOnBtn(e) {
@@ -33,7 +33,7 @@ function clickOnBtn(e) {
   }
 
   refs.catalList.innerHTML = markupCatalog(dataArray[e.target.id]);
-  // checkLocaleStorage();
+  checkLocaleStorage();
   changeBtnColor(e.target.id);
 }
 
