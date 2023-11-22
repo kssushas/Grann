@@ -31,7 +31,7 @@ if (screenWidth > 1000) {
   }
 
   refs.bestlist.innerHTML = total;
-  checkLocaleStorage();
+  // checkLocaleStorage();
  
 
   const images = document.querySelectorAll('.best-item');
@@ -92,7 +92,7 @@ if (screenWidth < 1000) {
   function renderBestProd(counter) {
     total = markupBest(counter) + markupBest(counter + 1);
     refs.bestlist.innerHTML = total;
-    checkLocaleStorage();
+    // checkLocaleStorage();
     switch (counter) {
       case 0:
         refs.el1.style.fill = '#705A66';
