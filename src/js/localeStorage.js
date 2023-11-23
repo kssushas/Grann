@@ -3,7 +3,7 @@ import { dataArray } from './cakesApi';
 const refs = {
   listOfProducts: document.querySelector('.storage-js'),
 };
-const localeStorageKey = 'data';
+export const localeStorageKey = 'data';
 let arrayOfChosenBooks = [];
 
 if (localStorage.getItem(localeStorageKey)) {
