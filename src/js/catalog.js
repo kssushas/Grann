@@ -31,10 +31,9 @@ function clickOnBtn(e) {
   if (e.target.nodeName !== 'BUTTON') {
     return;
   }
-
-  refs.catalList.innerHTML = markupCatalog(dataArray[e.target.id]);
+  refs.catalList.innerHTML = markupCatalog(dataArray[e.target.dataset.num]);
   checkLocaleStorage();
-  changeBtnColor(e.target.id);
+  changeBtnColor(e.target.dataset.num);
 }
 
 function changeBtnColor(id) {
