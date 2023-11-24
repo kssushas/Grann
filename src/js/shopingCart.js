@@ -24,7 +24,7 @@ const localeStorageData = JSON.parse(localStorage.getItem(localeStorageKey)) || 
 function markupShopList(data) {
  return data.map(el => {
   return `<li class="shopingListItem">
-  <img srcset="${el.srcset}" src="${el.src}" alt="${el.title}" class="shop-img">
+  <img src="${el.src}" alt="${el.title}" class="shop-img">
   <div class="shop-wrap">
     <h2 class="shop-prod-title">${el.title}</h2>
     <p class="shop-price">${el.price}</p>
