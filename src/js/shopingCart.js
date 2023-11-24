@@ -1,4 +1,4 @@
-// import { localeStorageKey } from "./localeStorage";
+import { localeStorageKey } from "./localeStorage.js";
 
 const refs = {
     openShopListBtn: document.querySelector('.header-shopping-card'),
@@ -14,7 +14,7 @@ refs.closeShopListBtn.addEventListener('click', toggleShopList);
 function toggleShopList() {
   refs.shopListContainer.classList.toggle('is-hidden');
   document.body.classList.toggle('no-scroll');
-const localeStorageData = JSON.parse(localStorage.getItem('data')) || [];
+const localeStorageData = JSON.parse(localStorage.getItem(localeStorageKey)) || [];
   if(!refs.shopListContainer.classList.contains('is-hidden')){
     refs.shopList.innerHTML = markupShopList(localeStorageData);
     refs.shopPriceOrder.innerHTML = markupTotalPrice(localeStorageData);
