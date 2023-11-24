@@ -1,17 +1,17 @@
 // import { localeStorageKey } from "./localeStorage";
 
 const refs = {
-    openShopListBtn: document.querySelector('[data-shopList-open]'),
-    closeShopListBtn: document.querySelector('[data-shopList-close]'),
-    shopListContainer: document.querySelector('[data-shopList]'),
+    openShopListBtn: document.querySelector('.header-shopping-card'),
+    closeShopListBtn: document.querySelector('.shop-close-btn'),
+    shopListContainer: document.querySelector('.shop-menu'),
     shopList: document.querySelector('.shopList'),
     shopPriceOrder : document.querySelector('.shop-order-price'),
   };
 
-refs.openShopListBtn.addEventListener('click', toggleList);
-refs.closeShopListBtn.addEventListener('click', toggleList);
+refs.openShopListBtn.addEventListener('click', toggleShopList);
+refs.closeShopListBtn.addEventListener('click', toggleShopList);
 
-function toggleList() {
+function toggleShopList() {
   refs.shopListContainer.classList.toggle('is-hidden');
   document.body.classList.toggle('no-scroll');
 const localeStorageData = JSON.parse(localStorage.getItem('data')) || [];
