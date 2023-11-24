@@ -36,7 +36,7 @@ function clickOnLink(e) {
     });
 
     refs.menu.classList.add('is-hidden');
-    document.body.classList.toggle('no-scroll');
+    document.body.classList.remove('no-scroll');
   }  
   
  if( `${localePath}${hrefLink}` !== window.location.pathname) {

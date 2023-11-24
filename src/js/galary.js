@@ -1,21 +1,21 @@
 const refs = {
-    galarryLink : document.querySelectorAll('.galarry-link'),
-    galaryList : document.querySelector('.galary-list'),
-}
+  galarryLink: document.querySelectorAll('.galarry-link'),
+  galaryList: document.querySelector('.galary-list'),
+};
+
+const ghUrl = 'https://kssushas.github.io/Grann';
 
 refs.galarryLink.forEach(link => {
-    link.addEventListener('click', clickOnGalLink)
-})
+  link.addEventListener('click', clickOnGalLink);
+});
 
-let targetNumber=0;
+let targetNumber = 0;
+sessionStorage.setItem('btn-value', targetNumber);
 
 function clickOnGalLink(e) {
-    e.preventDefault();
-     targetNumber = e.target.dataset.num;
-const href = this.getAttribute('href');
-// window.location.href = href;
-return targetNumber;
+  e.preventDefault();
+  targetNumber = e.target.dataset.num;
+  sessionStorage.setItem('btn-value', targetNumber);
+  const href = this.getAttribute('href');
+  window.location.href = `${ghUrl}${href}`;
 }
-
-
-export {targetNumber};

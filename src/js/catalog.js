@@ -4,7 +4,6 @@ import {
 } from './cakesApi';
 import svg from '../img/svg.svg#icon-shoping-cart';
 import { checkLocaleStorage } from '../js/localeStorage';
-import { targetNumber } from './galary';
 
 if (window.innerWidth < 600) {
   new Swiper('.swiper', {
@@ -20,11 +19,12 @@ const refs = {
 };
 
 let selectedBtn = null;
+const galarryBtnValue = sessionStorage.getItem('btn-value');
 
 refs.swiperWrapper.addEventListener('click', clickOnBtn);
-refs.catalList.innerHTML = markupCatalog(dataArray[targetNumber]);
+refs.catalList.innerHTML = markupCatalog(dataArray[galarryBtnValue]);
 checkLocaleStorage();
-changeBtnColor(targetNumber);
+changeBtnColor(galarryBtnValue);
 
 export function clickOnBtn(e) {
   if (e.target.nodeName !== 'BUTTON') {
@@ -56,7 +56,7 @@ function markupCatalog(data) {
         <div class="catal-wrap">
         <h4 class="catal-list-title">${el.title}</h4>
         <p class="catal-list-p">${el.price}</p>
-        <svg class="catal-shop-card js-add-basket"><use href="../img/svg.svg#icon-shoping-cart"></use></svg>
+        <svg class="catal-shop-card js-add-basket"><use href="${svg}"></use></svg>
         </div>
         </li>`;
     })
