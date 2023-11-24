@@ -54,14 +54,18 @@ function addToLocaleStorage(id) {
 export function checkLocaleStorage() {
   if (localStorage.getItem(localeStorageKey)) {
     const data = JSON.parse(localStorage.getItem(localeStorageKey));
+    console.log(data)
     for (let value of data) {
       if (document.getElementById(value.id)) {
         const foundObject = dataArray
           .flat()
           .find(item => item.id === parseInt(value.id));
         const li = document.getElementById(value.id);
+        console.log(li)
         const imgWrapper = li.querySelector('.js-btn-wrap');
+        console.log(imgWrapper)
         const shopIcon = li.querySelector('.js-add-basket');
+        console.log(shopIcon)
         imgWrapper.classList.add('show-wrap');
         shopIcon.style.display = 'none';
         imgWrapper.addEventListener(
