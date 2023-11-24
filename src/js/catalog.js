@@ -31,6 +31,7 @@ function clickOnBtn(e) {
   if (e.target.nodeName !== 'BUTTON') {
     return;
   }
+
   refs.catalList.innerHTML = markupCatalog(dataArray[e.target.dataset.num]);
   checkLocaleStorage();
   changeBtnColor(e.target.dataset.num);

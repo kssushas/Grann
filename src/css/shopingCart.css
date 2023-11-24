@@ -34,10 +34,14 @@
     background-color: transparent;
 }
 
+.shopList{
+    margin: 0 auto;
+    max-width: 430px;
+}
+
 .shopingListItem {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -49,7 +53,7 @@
 }
 
 .shop-wrap{
-    max-width: 167px;
+    max-width: 120px;
 }
 
 .shop-price{
