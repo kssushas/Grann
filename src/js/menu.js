@@ -42,6 +42,4 @@ function clickOnLink(e) {
  if( `${localePath}${hrefLink}` !== window.location.pathname) {
 window.location.href = `${ghUrl}${hrefLink}#${targetId}`
   }
-
-
 }

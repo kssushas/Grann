@@ -52,10 +52,11 @@
 }
 .shop-img{
     max-width: 168px;
+    height: 168px;
 }
 
 .shop-wrap{
-    max-width: 120px;
+    width: 120px;
 }
 
 .shop-price{
@@ -102,15 +103,11 @@ line-height: 20px;
     }
 
     .shop-wrap{
-        max-width: 150px;
+        width: 150px;
     }
 
     .shop-title{
         font-size: 24px;
-    }
-
-    .shopingListItem {
-       gap: 30px;
     }
 
     .title-wrap{

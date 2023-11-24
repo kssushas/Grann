@@ -4,6 +4,7 @@ import {
 } from './cakesApi';
 import svg from '../img/svg.svg#icon-shoping-cart';
 import { checkLocaleStorage } from '../js/localeStorage';
+import { targetNumber } from './galary';
 
 if (window.innerWidth < 600) {
   new Swiper('.swiper', {
@@ -11,8 +12,6 @@ if (window.innerWidth < 600) {
     slidesPerView: 'auto',
   });
 }
-
-
 
 const refs = {
   catalList: document.querySelector('.catalog-list'),
@@ -23,11 +22,11 @@ const refs = {
 let selectedBtn = null;
 
 refs.swiperWrapper.addEventListener('click', clickOnBtn);
-refs.catalList.innerHTML = markupCatalog(dataArray[0]);
+refs.catalList.innerHTML = markupCatalog(dataArray[targetNumber]);
 checkLocaleStorage();
-changeBtnColor(0);
+changeBtnColor(targetNumber);
 
-function clickOnBtn(e) {
+export function clickOnBtn(e) {
   if (e.target.nodeName !== 'BUTTON') {
     return;
   }
