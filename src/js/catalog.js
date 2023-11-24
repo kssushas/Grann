@@ -31,7 +31,6 @@ function clickOnBtn(e) {
   if (e.target.nodeName !== 'BUTTON') {
     return;
   }
-
   refs.catalList.innerHTML = markupCatalog(dataArray[e.target.dataset.num]);
   checkLocaleStorage();
   changeBtnColor(e.target.dataset.num);
@@ -58,7 +57,7 @@ function markupCatalog(data) {
         <div class="catal-wrap">
         <h4 class="catal-list-title">${el.title}</h4>
         <p class="catal-list-p">${el.price}</p>
-        <svg class="catal-shop-card js-add-basket"><use href="${svg}"></use></svg>
+        <svg class="catal-shop-card js-add-basket"><use href="../img/svg.svg#icon-shoping-cart"></use></svg>
         </div>
         </li>`;
     })

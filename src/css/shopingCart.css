@@ -37,12 +37,14 @@
 .shopList{
     margin: 0 auto;
     max-width: 430px;
+    padding: 0 20px;
 }
 
 .shopingListItem {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
 }
 
 .shopingListItem:not(:last-child){
@@ -100,11 +102,15 @@ line-height: 20px;
     }
 
     .shop-wrap{
-        max-width: auto;
+        max-width: 150px;
     }
 
     .shop-title{
         font-size: 24px;
+    }
+
+    .shopingListItem {
+       gap: 30px;
     }
 
     .title-wrap{
@@ -117,10 +123,14 @@ line-height: 20px;
         flex-wrap: wrap;
         gap: 30px;
         align-items: start;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .shop-img{
-        max-width: 286px;
+        min-width: 286px;
+        height: 286px;
     }
 
     .shop-prod-title{
