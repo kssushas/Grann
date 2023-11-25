@@ -80,6 +80,10 @@ line-height: 15px;
     right: 0;
 }
 
+.catal-shop-card:hover, .catal-shop-card:focus{
+    transform: scale(1.2);
+}
+
 .catalog-remove-btn{
     font-family: 'Montserrat';
     font-weight: 300;

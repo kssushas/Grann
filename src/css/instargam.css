@@ -107,6 +107,10 @@ position: relative;
     right: -27px;
    }
 
+   .inst-desk-btn:hover, .inst-desk-btn:focus{
+      background-color: var(--hover-color);
+   }
+
    .inst-desk-icon{
     display: block;
     position: absolute;

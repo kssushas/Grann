@@ -30,6 +30,10 @@ line-height: 20px;
     right: 2px;
 }
 
+.best-shop-card:hover, .best-shop-card:focus{
+    transform: scale(1.2);
+}
+
 .best-mob-btn{
     display: flex;
     justify-content: space-between;
